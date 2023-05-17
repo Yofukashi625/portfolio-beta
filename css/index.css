@@ -128,7 +128,7 @@
     padding: 10px 30px;
     border: none;
     text-align: center;
-    font-size: 16px;
+    font-size: 1vw;
     font-family: 'Montserrat', sans-serif;
     margin: 0px 5px 0px 0px;
     cursor: pointer;
@@ -148,7 +148,7 @@
     padding: 10px 30px;
     border: none;
     text-align: center;
-    font-size: 16px;
+    font-size: 1vw;
     font-family: 'Montserrat', sans-serif;
     margin: 0px 5px 0px 0px;
     cursor: pointer;;
