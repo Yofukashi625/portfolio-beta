@@ -40,10 +40,12 @@
 }
 
 .navbar img {
-    float: left;
-    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
     width: 40px;
-    padding: 10px 10px 0px 50px;
+    height: 40px;
+    transform: translate(-50%, -50%);
 }
 
 /* ------------------ Content on landing page ------------------*/
