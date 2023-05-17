@@ -59,6 +59,7 @@
     font-family: 'Montserrat', sans-serif;
     width: 50%;
     padding: 40px;
+    margin: 0 auto;
 }
 
 #title {
@@ -168,7 +169,7 @@
 
 /* ------------------ RWD Testing ------------------*/
   
-  @media (max-width: 920px) {
+  @media (max-width: 1200px) {
     #title {
       font-size: 3.5vw;
     }
