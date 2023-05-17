@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* nav bar, as always */
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar li {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding: 20px 40px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.navbar li:hover {
+    background-color: rgb(187, 188, 188);
+    transition: all 0.1s ease;
+    transition-delay: 0s;
+}
+
+.navbar img {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+}
+
+
+/* main gallery goes here */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 160px;
+    padding-bottom: 120px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.image {
+    width: 20vw;
+    height: 20vw;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+
+}
+
+.image:hover img {
+    transform: scale(1.75);
+    box-shadow: 15px 15px 6px rgba(0, 0, 0, 0.2);
+}

@@ -4,11 +4,11 @@
     border: 1px solid red;
 } */
 
-/* ------------------ navigation bar ------------------ */
-
 body {
     background-color: rgb(235, 235, 235);
 }
+
+/* ------------------ navigation bar ------------------ */
 
 .navbar {
     background-color: rgb(255, 255, 255);
