@@ -45,7 +45,7 @@
     padding: 17px 10px 0px 50px;
 }
 
-/* ------------------Content on landing page left side ------------------*/
+/* ------------------ Content on landing page ------------------*/
 
 .landing {
     display: flex;
@@ -54,6 +54,8 @@
     height: 100vh;
     margin: 50px 100px;
 }
+
+/* ------------------ Content on landing page left side ------------------*/
 
 .landing-left {
     font-family: 'Montserrat', sans-serif;
@@ -169,7 +171,7 @@
 
 /* ------------------ RWD Testing ------------------*/
   
-  @media (max-width: 1200px) {
+  @media (max-width: 1500px) {
     #title {
       font-size: 3.5vw;
     }
