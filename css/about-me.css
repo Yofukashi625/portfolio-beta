@@ -59,7 +59,7 @@ body {
 /* Main content starts here */
 
 .container-section-1 {
-    background-color: black;
+    background-image: linear-gradient(to bottom, #000000, #292929);
     position: relative;
     display: inline-flex;
     justify-content: space-between;

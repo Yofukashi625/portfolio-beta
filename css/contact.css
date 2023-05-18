@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* * {
+    border: 1px solid red;
+} */
+
+/* ------------------ navigation bar ------------------ */
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar li {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding: 20px 40px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.navbar li:hover {
+    background-color: rgb(187, 188, 188);
+    transition: all 0.1s ease;
+    transition-delay: 0s;
+}
+
+.navbar img {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+}
+
+/* main photo & circle effect goes here */
+
+.main {
+    position: relative;
+    margin: 175px 0px 0px 0px;
+    display: flex;
+}
+
+.thumb {
+    position: relative;
+    width: 20vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25vw;
+    height: 25vw;
+    border: 7px dashed black;
+    border-radius: 50%;
+    animation: rotate 100s linear infinite;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* social icon goes here */
+
+.icon-social {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 8.5vw auto;
+}
+  
+.icon-social img {
+    width: 3vw;
+    height: 3vw;
+    margin: 0 10px 0px;
+    padding: 0 0.5vw 0;
+    transition: box-shadow 0.3s ease;
+}
+
+.linked-in {
+    transform: scale(1.1);
+}
+
+.icon-social img:hover {
+    box-shadow: 2px 2px 0px darkgray;
+}
