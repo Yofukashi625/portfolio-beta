@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 /* * {
     border: 1px solid red;
 } */
@@ -86,7 +86,7 @@ body {
 }
 
 .container-section-1 img {
-    max-width: 45%;
+    max-width: 50%;
     margin: 0 auto;
     object-fit: cover;
     border-radius: 50%;
@@ -97,7 +97,7 @@ body {
 .container-section-2 {
     background-color: rgb(255, 255, 255);
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     margin: 0 10em;
     box-shadow: 2px 2px 4px rgba(126, 126, 126, 0.2);
 }
