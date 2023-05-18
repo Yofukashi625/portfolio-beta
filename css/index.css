@@ -36,7 +36,7 @@
 .navbar li:hover {
     background-color: rgb(187, 188, 188);
     transition: all 0.18s ease;
-    transition-delay: 0s;
+    transition-delay: 0.s;
 }
 
 .navbar img {
