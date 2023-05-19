@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+body {
+    margin: 0;
+}
+
 /* nav bar, as always */
 
 .navbar {
@@ -32,12 +36,12 @@
     color: rgb(0, 0, 0);
     padding: 20px 40px 20px;
     display: block;
-}`
+}
 
 .navbar li:hover {
     background-color: rgb(187, 188, 188);
     transition: all 0.18s ease;
-    transition-delay: 0s;
+    transition-delay: 0.s;
 }
 
 .navbar img {
