@@ -59,8 +59,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90vh;
-    margin: 50px 100px;
+    height: 100vh;
+    margin: 50px 100px 0px;
 }
 
 /* ------------------ Content on landing page left side ------------------*/
@@ -72,12 +72,12 @@ body {
     margin: 0 auto;
 }
 
-#introduction {
+#intro {
     font-size: 3rem;
     line-height: 1.15em;
 }
 
-#sub-introduction {
+#sub-intro {
     font-size: 1.3rem;
 }
 
@@ -187,12 +187,3 @@ body {
 }
 
 /* ------------------ RWD Testing ------------------*/
-  
-  @media (max-width: 1500px) {
-    #title {
-      font-size: 3.5vw;
-    }
-    #sub-title {
-      font-size: 1.75vw;
-    }
-}
