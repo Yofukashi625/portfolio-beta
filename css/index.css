@@ -59,7 +59,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     margin: 50px 100px;
 }
 
@@ -72,13 +72,13 @@ body {
     margin: 0 auto;
 }
 
-#title {
-    font-size: 35vw;
+#introduction {
+    font-size: 3rem;
     line-height: 1.15em;
 }
 
-#sub-title {
-    font-size: 20px;
+#sub-introduction {
+    font-size: 1.3rem;
 }
 
 /* ------------------Content on landing page right side ------------------*/

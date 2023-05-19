@@ -6,6 +6,7 @@
 
 body {
     background-color: rgb(235, 235, 235);
+    margin: 0;
 }
 
 /* ------------------ navigation bar ------------------ */
@@ -60,7 +61,7 @@ body {
 /* Main content starts here */
 
 .container-section-1 {
-    background-image: linear-gradient(to bottom, #000000, #292929);
+    background-image: linear-gradient(to bottom, #000000 40%, #2b2b2b 100%);
     position: relative;
     display: inline-flex;
     justify-content: space-between;
@@ -82,7 +83,7 @@ body {
     width: 60%;
     margin: 0 auto;
     color: white;
-    font-size: 14px;
+    font-size: 1rem;
     padding: 10px 20px;
 }
 
