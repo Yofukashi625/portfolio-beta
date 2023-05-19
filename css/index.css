@@ -2,6 +2,10 @@
 
 /* ------------------ navigation bar ------------------ */
 
+body {
+    margin: 0;
+}
+
 .navbar {
     background-color: rgb(255, 255, 255);
     opacity: 80%;
@@ -25,12 +29,13 @@
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
-    padding: 20px 40px 20px;
 }
 
 .navbar a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+    padding: 20px 40px 20px;
+    display: block;
 }
 
 .navbar li:hover {
