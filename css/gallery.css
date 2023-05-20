@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+
+/* * {
+    border: 1px solid red;
+} */
+
 body {
     margin: 0;
     background-color: rgb(235, 235, 235);
@@ -120,4 +125,85 @@ body {
 .image:hover img {
     transform: scale(1.75);
     box-shadow: 15px 15px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------ RWD Testing ------------------*/
+
+@media (max-width: 576px){
+
+    /* change of nav start here */
+
+    .navbar{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+
+    .navbar ul{
+        text-align: center;
+        display: block;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color:var(--secondary-color);
+        margin: 20px 0px;
+        padding: 10px 15px 10px;
+        display: block;
+    }
+
+    .navbar li:hover {
+        background-color: rgb(255, 255, 255);
+        transition: all 0s ease;
+        transition-delay: 0s;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #icon{
+        display: none;
+    }
+
+    /* Main content starts here */
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1px;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .image {
+        width: 30vw;
+        height: 30vw;
+        background-color: rgb(244, 244, 244);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        transition: transform 0s;
+    }
+    
+    .image:hover img {
+        transform: scale(1);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    }
+
 }

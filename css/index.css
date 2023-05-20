@@ -225,6 +225,35 @@ body {
     /* change of nav start here */
 
     .navbar{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+
+    .navbar ul{
+        text-align: center;
+        display: block;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color:var(--secondary-color);
+        margin: 20px 0px;
+        padding: 10px 15px 10px;
+        display: block;
+    }
+
+    .navbar li:hover {
+        background-color: rgb(255, 255, 255);
+        transition: all 0s ease;
+        transition-delay: 0s;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #icon{
         display: none;
     }
 
@@ -280,7 +309,7 @@ body {
         padding: 10px 30px;
         border: none;
         text-align: center;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         margin: 0px 5px 0px 0px;
     }
 
@@ -291,14 +320,14 @@ body {
     }
     
     .button-view-more{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .button-view-more::after {
         display:block;
         content: '';
-        padding: 2px auto;
-        border-bottom: solid 2.5px var(--secondary-color);
+        padding: 0px auto;
+        border-bottom: solid 0px var(--secondary-color);
         transform: scaleX(0);
         transition: transform 150ms ease-in-out;
     }

@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+
+/* * {
+    border: 1px solid red;
+} */
+
+/* main setting */
+
 :root {
     --primary-color: rgb(255, 255, 255);
     --secondary-color: rgb(10, 10, 18);
@@ -118,7 +125,6 @@ body {
     display: flex;
     justify-content: center;
     margin: 8.5vw auto;
-
 }
   
 .icon-social img {
@@ -139,4 +145,98 @@ body {
 
 .icon-social #google:hover {
     filter: invert(32%) sepia(53%) saturate(2330%) hue-rotate(340deg) brightness(91%) contrast(87%);    ;
+}
+
+/* ------------------ RWD Testing ------------------*/
+
+@media (max-width: 576px){
+
+    /* change of nav start here */
+
+    .navbar{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+
+    .navbar ul{
+        text-align: center;
+        display: block;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color:var(--secondary-color);
+        margin: 20px 0px;
+        padding: 10px 15px 10px;
+        display: block;
+    }
+
+    .navbar li:hover {
+        background-color: rgb(255, 255, 255);
+        transition: all 0s ease;
+        transition-delay: 0s;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #icon{
+        display: none;
+    }
+
+    /* main content starts here */
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 250px auto 50px;
+    }
+
+    .thumb {
+        position: relative;
+        width: 40vw;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0px auto;
+    }
+    
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 45vw;
+        height: 45vw;
+        border: 4px dashed var(--secondary-color);
+        border-radius: 50%;
+        animation: rotate 100s linear infinite;
+        transform: translate(-50%, -50%);
+    }
+
+    .icon-social{
+        margin: 80px auto;
+    }
+
+    .icon-social img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 0 10px 0px;
+        padding: 0 0.7rem 0;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .icon-social #linkedin {
+        filter: invert(18%) sepia(93%) saturate(4843%) hue-rotate(200deg) brightness(96%) contrast(92%);
+    }
+    
+    .icon-social #facebook {
+        filter: invert(35%) sepia(55%) saturate(641%) hue-rotate(181deg) brightness(98%) contrast(87%);
+    }
+    
+    .icon-social #google {
+        filter: invert(32%) sepia(53%) saturate(2330%) hue-rotate(340deg) brightness(91%) contrast(87%);    ;
+    }
 }

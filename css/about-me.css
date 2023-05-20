@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 /* * {
     border: 1px solid red;
 } */
@@ -85,7 +86,7 @@ body {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    margin: 8em 10em 0em 10em;
+    margin: 10vw 12vw 0em 12vw;
 }
 
 .container-left {
@@ -119,7 +120,7 @@ body {
     background-color: rgb(255, 255, 255);
     justify-content: space-between;
     align-items: stretch;
-    margin: 0 10em;
+    margin: 0 12vw 0 12vw;
     box-shadow: 2px 2px 4px rgba(126, 126, 126, 0.2);
 }
 
@@ -155,4 +156,114 @@ ul {
 
 footer {
     margin: 100px auto;
+}
+
+/* ------------------ RWD Testing ------------------*/
+
+@media (max-width: 576px){
+
+    /* change of nav start here */
+
+    .navbar{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+
+    .navbar ul{
+        text-align: center;
+        display: block;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color:var(--secondary-color);
+        margin: 20px 0px;
+        padding: 10px 15px 10px;
+        display: block;
+    }
+
+    .navbar li:hover {
+        background-color: rgb(255, 255, 255);
+        transition: all 0s ease;
+        transition-delay: 0s;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #icon{
+        display: none;
+    }
+
+    .container-section-1 {
+        position: relative;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 80px auto 0px;
+    }
+
+    .container-left {
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 40px 0;
+        color: white;
+        padding: 0px;
+    }
+
+    .container-section-1 img {
+        max-width: 50%;
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    .container-right {
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+        line-height: 1.5;
+        color: white;
+        font-size: 1rem;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .container-section-2 {
+        background-color: rgb(255, 255, 255);
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 0 auto;
+        box-shadow: 2px 2px 4px rgba(126, 126, 126, 0.2);
+    }
+
+    .experience-container {
+        display: flex;
+        align-items: start;
+        width: 100%;
+    }
+    
+    .experience-left {
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(40, 40, 40);
+        margin: 12px 10px 0px 25px;
+    }
+    
+    .experience-right {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5;
+        color: rgb(40, 40, 40);
+        font-size: 14px;
+        margin: 15px 15px 5px 15px;
+    }
+
+    h3 {
+        font-size: .5rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
 }
