@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* for view layout */
+
+/* * {
+    border: 1px solid red;
+} */
 
 /* ------------------ dark mode test ------------------ */
 
@@ -68,8 +75,8 @@ body {
 }
 
 #icon {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2vw;
+    height: 2vw;
     cursor: pointer;
     display: block;
     margin: 0 1.5vw 0;
@@ -77,47 +84,48 @@ body {
 
 /* ------------------ Content on landing page ------------------*/
 
-.landing {
-    display: flex;
-    justify-content: space-between;
+.col {
+    display: grid;
+    justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 50px 100px 0px;
+    grid-template-columns: 1fr 1fr;
+    margin: 5vh 5vw 0;
 }
 
 /* ------------------ Content on landing page left side ------------------*/
 
-.landing-left {
+.col-1 {
     font-family: 'Montserrat', sans-serif;
-    width: 50%;
-    padding: 40px;
+    padding: 0px;
+    justify-content: center;
     margin: 0 auto;
 }
 
 #intro {
-    font-size: 3rem;
-    line-height: 1.15em;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
     color: var(--secondary-color);
 }
 
 #sub-intro {
-    font-size: 1.3rem;
+    font-size: 1.75vw;
     color: var(--secondary-color);
 }
 
 /* ------------------Content on landing page right side ------------------*/
 
-.landing-right {
+.col-2 {
     position: relative;
-    width: 50%;
     display: inline-block;
+    margin: 0 auto;
 }
 
-.landing-right img {
+.col-2 img {
     display: block;
     width: 30vw;
-    margin: 0 auto;
     height: auto;
+    margin: 0 auto;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -211,3 +219,72 @@ body {
 }
 
 /* ------------------ RWD Testing ------------------*/
+
+@media (max-width: 576px){
+
+    /* change of nav start here */
+
+    .navbar{
+        display: none;
+    }
+
+    /* change of main content start here */
+
+    .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        flex-direction: column-reverse;
+    }
+
+    .col-1{
+        order: -1;
+        margin: 100px 0px 0px;
+        text-align: left;
+        justify-content: center;
+    }
+
+    #intro{
+        font-size: 1.95rem;
+        line-height: 1.95rem;
+        font-weight: 700;
+        margin: 0 auto;
+    }
+
+    #sub-intro{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .col-2{
+        transform: scale(1.5);
+    }
+
+    .circle {
+        border: 5px dashed var(--secondary-color);
+    }
+
+    /* change of buttons start here */
+
+    .button {
+        margin: 25px auto;
+    }
+
+    .button a{
+        text-decoration: none;
+    }
+    
+    .button-contact-me {
+        background-color: var(--secondary-color);
+        padding: 10px 30px;
+        border: none;
+        text-align: center;
+        font-size: 1vw;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0px 5px 0px 0px;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease;
+    }
+    
+}
