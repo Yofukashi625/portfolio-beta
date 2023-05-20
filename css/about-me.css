@@ -67,12 +67,12 @@ body {
 #logo {
     width: 40px;
     height: 40px;
-    margin: 0 1.5vw 0;
+    margin: 0 0 0 2vw;
 }
 
 #icon {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2vw;
+    height: 2vw;
     cursor: pointer;
     display: block;
     margin: 0 1.5vw 0;
@@ -252,7 +252,7 @@ footer {
         font-family: 'Montserrat', sans-serif;
         width: 100%;
         color: rgb(40, 40, 40);
-        margin: 12px 10px 0px 15px;
+        margin: 12px 0px 0px 15px;
     }
     
     .experience-right {
