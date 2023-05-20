@@ -241,6 +241,7 @@ body {
         margin: 20px 0px;
         padding: 10px 15px 10px;
         display: block;
+        font-size: 3vw;
     }
 
     .navbar li:hover {
