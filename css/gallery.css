@@ -7,19 +7,40 @@ body {
 
 /* nav bar, as always */
 
+:root {
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(10, 10, 18);
+}
+
+.dark-theme {
+    --primary-color: rgb(10, 10, 18);
+    --secondary-color: rgb(255, 255, 255);
+}
+
+/* ------------------ navigation bar ------------------ */
+
+body {
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
 .navbar {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--primary-color);
     opacity: 80%;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     z-index: 1;
 }
 
 .navbar ul {
-    display: flex;
+    flex: 1;
+    text-align: right;
     justify-content: right;
     list-style-type: none;
     margin: 0px;
@@ -27,15 +48,15 @@ body {
 }
 
 .navbar li {
-    font-size: 20px;
+    font-size: 1.3vw;
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
 }
 
 .navbar a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 20px 40px 20px;
+    color:var(--secondary-color);
+    padding: 20px 35px 20px;
     display: block;
 }
 
@@ -45,13 +66,18 @@ body {
     transition-delay: 0.s;
 }
 
-.navbar img {
-    position: absolute;
-    top: 50%;
-    left: 5%;
+#logo {
     width: 40px;
     height: 40px;
-    transform: translate(-50%, -50%);
+    margin: 0 1.5vw 0;
+}
+
+#icon {
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    display: block;
+    margin: 0 1.5vw 0;
 }
 
 

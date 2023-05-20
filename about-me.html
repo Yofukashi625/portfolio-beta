@@ -8,16 +8,17 @@
     <title>About Marcus Feng</title>
 </head>
 <body>
-
+    <!-- Nav goes here -->
     <div>
         <nav class="navbar">
-            <img src="./resources/Marcus-01.png" alt="">
+            <img src="./resources/Marcus-01.png" id="logo" alt="">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about-me.html">About Me</a></li>
                 <li><a href="./gallery.html">Gallery</a></li>
                 <li><a href="./contact-me.html">Contact Me</a></li>
             </ul>
+            <img src="./resources/moon.png" id="icon" alt="">
         </nav>
     </div>
 
@@ -139,5 +140,19 @@
 <footer>
     <div></div>
 </footer>
+
+    <script>
+        var icon =document.getElementById("icon")
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")) {
+                icon.src = "./resources/sun.png"
+            }
+            else {
+                icon.src = "./resources/moon.png"
+            }
+        }
+    </script>
+
 </body>
 </html>

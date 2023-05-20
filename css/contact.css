@@ -1,25 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-/* * {
-    border: 1px solid red;
-} */
+:root {
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(10, 10, 18);
+}
+
+.dark-theme {
+    --primary-color: rgb(10, 10, 18);
+    --secondary-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--primary-color);
+}
 
 /* ------------------ navigation bar ------------------ */
 
 .navbar {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--primary-color);
     opacity: 80%;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     z-index: 1;
 }
 
 .navbar ul {
-    display: flex;
+    flex: 1;
+    text-align: right;
     justify-content: right;
     list-style-type: none;
     margin: 0px;
@@ -27,31 +41,36 @@
 }
 
 .navbar li {
-    font-size: 20px;
+    font-size: 1.3vw;
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
 }
 
 .navbar a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 20px 40px 20px;
+    color:var(--secondary-color);
+    padding: 20px 35px 20px;
     display: block;
 }
 
 .navbar li:hover {
     background-color: rgb(187, 188, 188);
     transition: all 0.18s ease;
-    transition-delay: 0s;
+    transition-delay: 0.s;
 }
 
-.navbar img {
-    position: absolute;
-    top: 50%;
-    left: 5%;
+#logo {
     width: 40px;
     height: 40px;
-    transform: translate(-50%, -50%);
+    margin: 0 1.5vw 0;
+}
+
+#icon {
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    display: block;
+    margin: 0 1.5vw 0;
 }
 
 /* main photo & circle effect goes here */
@@ -77,7 +96,7 @@
     left: 50%;
     width: 25vw;
     height: 25vw;
-    border: 7px dashed black;
+    border: 7px dashed var(--secondary-color);
     border-radius: 50%;
     animation: rotate 100s linear infinite;
     transform: translate(-50%, -50%);
@@ -99,6 +118,7 @@
     display: flex;
     justify-content: center;
     margin: 8.5vw auto;
+
 }
   
 .icon-social img {
@@ -109,10 +129,14 @@
     transition: box-shadow 0.3s ease;
 }
 
-.linked-in {
-    transform: scale(1.1);
+.icon-social #linkedin:hover {
+    filter: invert(18%) sepia(93%) saturate(4843%) hue-rotate(200deg) brightness(96%) contrast(92%);
 }
 
-.icon-social img:hover {
-    box-shadow: 2px 2px 0px darkgray;
+.icon-social #facebook:hover {
+    filter: invert(35%) sepia(55%) saturate(641%) hue-rotate(181deg) brightness(98%) contrast(87%);
+}
+
+.icon-social #google:hover {
+    filter: invert(32%) sepia(53%) saturate(2330%) hue-rotate(340deg) brightness(91%) contrast(87%);    ;
 }

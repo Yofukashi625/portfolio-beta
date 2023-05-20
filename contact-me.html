@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
-
+    <!-- Nav goes here -->
     <div>
         <nav class="navbar">
-            <img src="./resources/Marcus-01.png" alt="">
+            <img src="./resources/Marcus-01.png" id="logo" alt="">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about-me.html">About Me</a></li>
                 <li><a href="./gallery.html">Gallery</a></li>
                 <li><a href="./contact-me.html">Contact Me</a></li>
             </ul>
+            <img src="./resources/moon.png" id="icon" alt="">
         </nav>
     </div>
 
@@ -28,15 +29,29 @@
         </div>
         <div class="icon-social">
             <a href="https://www.linkedin.com/in/jo-yang-feng-1a4883165" target="_blank">
-                <img src="./resources/linkedin.svg" class="linked-in" alt="LinkedIn">
+                <img src="./resources/linkedin.svg" id="linkedin" alt="LinkedIn">
             </a>
             <a href="https://www.facebook.com/marcus19970625" target="_blank">
-                <img src="./resources/facebook.svg" alt="Facebook">
+                <img src="./resources/facebook.svg" id="facebook" alt="Facebook">
             </a>
-            <a href="mailto:rocksheep625@gmail.com" target="_blank">
-                <img src="./resources/google.svg" alt="Gmail">
+            <a href="https://mailto:rocksheep625@gmail.com" target="_blank">
+                <img src="./resources/google.svg" id="google" alt="Gmail">
             </a>
         </div>
     </div>
+
+    <script>
+        var icon = document.getElementById("icon")
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")) {
+                icon.src = "./resources/sun.png"
+            }
+            else {
+                icon.src = "./resources/moon.png"
+            }
+        }
+    </script>
+
 </body>
 </html>

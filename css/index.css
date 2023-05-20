@@ -1,24 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* ------------------ dark mode test ------------------ */
+
+:root {
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(10, 10, 18);
+}
+
+.dark-theme {
+    --primary-color: rgb(10, 10, 18);
+    --secondary-color: rgb(255, 255, 255);
+}
+
 /* ------------------ navigation bar ------------------ */
 
 body {
     margin: 0;
+    background-color: var(--primary-color);
 }
 
 .navbar {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--primary-color);
     opacity: 80%;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     z-index: 1;
 }
 
 .navbar ul {
-    display: flex;
+    flex: 1;
+    text-align: right;
     justify-content: right;
     list-style-type: none;
     margin: 0px;
@@ -26,15 +43,15 @@ body {
 }
 
 .navbar li {
-    font-size: 20px;
+    font-size: 1.3vw;
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
 }
 
 .navbar a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 20px 40px 20px;
+    color:var(--secondary-color);
+    padding: 20px 35px 20px;
     display: block;
 }
 
@@ -44,13 +61,18 @@ body {
     transition-delay: 0.s;
 }
 
-.navbar img {
-    position: absolute;
-    top: 50%;
-    left: 5%;
+#logo {
     width: 40px;
     height: 40px;
-    transform: translate(-50%, -50%);
+    margin: 0 1.5vw 0;
+}
+
+#icon {
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    display: block;
+    margin: 0 1.5vw 0;
 }
 
 /* ------------------ Content on landing page ------------------*/
@@ -75,10 +97,12 @@ body {
 #intro {
     font-size: 3rem;
     line-height: 1.15em;
+    color: var(--secondary-color);
 }
 
 #sub-intro {
     font-size: 1.3rem;
+    color: var(--secondary-color);
 }
 
 /* ------------------Content on landing page right side ------------------*/
@@ -104,7 +128,7 @@ body {
     left: 50%;
     width: 35vw;
     height: 35vw;
-    border: 10px dashed black;
+    border: 10px dashed var(--secondary-color);
     border-radius: 50%;
     animation: rotate 100s linear infinite;
     transform: translate(-50%, -50%);
@@ -129,11 +153,11 @@ body {
 
 .button a{
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
 }
 
 .button-contact-me {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--secondary-color);
     padding: 10px 30px;
     border: none;
     text-align: center;
@@ -146,28 +170,28 @@ body {
 
 .button-contact-me:hover {
     background-color: rgb(220, 220, 220);
-    color: black;
+    color: var(--secondary-color);
     box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* ------------------ button View More ------------------*/
 
 .button-view-more {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--primary-color);
     padding: 10px 30px;
     border: none;
     text-align: center;
     font-size: 1vw;
     font-family: 'Montserrat', sans-serif;
     margin: 0px 5px 0px 0px;
-    cursor: pointer;;
+    cursor: pointer;
 }
 
 .button-view-more::after {
     display:block;
     content: '';
     padding: 2px auto;
-    border-bottom: solid 2.5px #000000;
+    border-bottom: solid 2.5px var(--secondary-color);
     transform: scaleX(0);
     transition: transform 150ms ease-in-out;
 }
@@ -183,7 +207,7 @@ body {
 
 .button-view-more a {
     text-decoration: none;
-    color: #000000;
+    color: var(--secondary-color);
 }
 
 /* ------------------ RWD Testing ------------------*/
