@@ -86,7 +86,7 @@ body {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10vw 12vw 0em 12vw;
+    margin: 10svw 12svw 0 12svw;
 }
 
 .container-left {
@@ -158,7 +158,7 @@ footer {
     margin: 100px auto;
 }
 
-/* ------------------ RWD Testing ------------------*/
+/* ------------------ iPhone RWD ------------------*/
 
 @media (max-width: 576px){
 
@@ -250,9 +250,146 @@ footer {
     
     .experience-left {
         font-family: 'Montserrat', sans-serif;
-        width: 100%;
+        width: 4%;
         color: rgb(40, 40, 40);
-        margin: 12px 0px 0px 35px;
+        margin: 12px 50px 0px 35px;
+    }
+    
+    .experience-right {
+        font-family: 'Montserrat', sans-serif;
+        /* width: 80%; */
+        line-height: 1.5;
+        color: rgb(40, 40, 40);
+        font-size: 14px;
+        margin: 15px 0px 5px 35px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    h4 {
+        font-size: 0.7rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    li {
+        font-size: 0.6rem;
+    }
+
+    .skill {
+        font-size: 0.5rem;
+    }
+
+    .detail {
+        font-size: 0.6rem
+    }
+}
+
+/* ------------------ iPad RWD ------------------*/
+
+@media (max-width: 768px){
+
+    /* change of nav start here */
+
+    .navbar{
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+
+    .navbar ul{
+        text-align: center;
+        display: block;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color:var(--secondary-color);
+        margin: 20px 0px;
+        padding: 10px 15px 10px;
+        display: block;
+        font-size: 3vw;
+    }
+
+    .navbar li:hover {
+        background-color: rgb(255, 255, 255);
+        transition: all 0s ease;
+        transition-delay: 0s;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #icon{
+        display: none;
+    }
+
+    .container-section-1 {
+        background-image: linear-gradient(to bottom, #000000 40%, #000000 100%);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto 0px;
+    }
+
+    .container-left {
+        font-family: 'Montserrat', sans-serif;
+
+        margin: 0 auto;
+        color: white;
+        padding: 0px auto;
+        width: 50%;
+    }
+
+    .container-left img {
+        position: relative;
+        max-width: 80%;
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    .container-right {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5;
+        color: white;
+        font-size: 1rem;
+        padding: 0 auto;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .container-section-2 {
+        background-color: rgb(255, 255, 255);
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        box-shadow: 0px 0px 0px rgba(126, 126, 126, 0.2);
+    }
+
+    .experience-container {
+        display: block;
+        width: 100%;
+        margin: 40px 0 40px 0px;
+        text-align: left;
+    }
+    
+    .experience-left {
+        font-family: 'Montserrat', sans-serif;
+        width: 45%;
+        color: rgb(40, 40, 40);
+        margin: 12px 50px 0px 35px;
     }
     
     .experience-right {
