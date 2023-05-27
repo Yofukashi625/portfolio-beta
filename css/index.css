@@ -264,13 +264,13 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 80px auto;
+        margin: 40px auto 0px;
         flex-direction: column-reverse;
     }
 
     .col-1{
         order: -1;
-        margin: 100px 0px 0px;
+        margin: 90px 0px 0px;
         text-align: left;
         justify-content: center;
     }
